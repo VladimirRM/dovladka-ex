@@ -21,7 +21,7 @@ function App() {
     <ToDoForm/>
     {todos.map(()=>{
       return(
-        <ToDo key={todo.id}/>
+        <ToDo key={todo.id} />
       )
     })}
   </header>
