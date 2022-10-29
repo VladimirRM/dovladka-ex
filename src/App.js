@@ -8,7 +8,7 @@ function App() {
    const addTasks =()=>{
 
    }
-   const removeTasks =()=>{
+   const removeTask =()=>{
 
    }
    const handleToggle =()=>{
@@ -19,9 +19,12 @@ function App() {
   <header>
     <h1>Todo list:{todos.length}</h1>
     <ToDoForm/>
-    {todos.map(()=>{
+    {todo.map(()=>{
       return(
-        <ToDo key={todo.id} />
+        <ToDo key={todos.id} />
+        todo={todo}
+        toggleTask={handleToggle}
+        removeTask={removeTask}
       )
     })}
   </header>
