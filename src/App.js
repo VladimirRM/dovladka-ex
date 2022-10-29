@@ -8,6 +8,9 @@ function App() {
    const addTasks =()=>{
 
    }
+   const removeTasks =()=>{
+
+   }
   return (
 <div></div>
   );
