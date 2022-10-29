@@ -5,11 +5,15 @@ const ToDoForm = () => {
     const handleSubmit =()=>{
 
     }
+    const handleChange =()=>{
+
+    }
   return (
     <div>
         <form onSubmit={handleSubmit}>
              <input value={userInput} type='text' 
-             onChange={handleChange}/>
+             onChange={handleChange}
+             onKeyDown={handleKeyPress}/>
         </form>
     </div>
   )
