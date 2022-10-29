@@ -4,7 +4,7 @@ import ToDo from './ToDo'
 import ToDoForm  from "./ToDoForm";
 
 function App() {
-   constuseState
+   const [ todos,setTodos]=useState([])
   return (
 <div></div>
   );
