@@ -5,8 +5,12 @@ import ToDoForm  from "./ToDoForm";
 
 function App() {
    const [ todos,setTodos]=useState([])
-   const addTasks =()=>{
-
+   const addTasks =(userInput)=>{
+      if(userInput){
+        const newItem={
+          id:Math.random().toString(36)
+        }
+      }
    }
    const removeTask =()=>{
 
@@ -19,10 +23,10 @@ function App() {
   <header>
     <h1>Todo list:{todos.length}</h1>
     <ToDoForm/>
-    {todo.map(()=>{
+    {todos .map(()=>{
       return(
         <ToDo key={todos.id} />
-        todo={todo}
+        // todos={todos}
         toggleTask={handleToggle}
         removeTask={removeTask}
       )
