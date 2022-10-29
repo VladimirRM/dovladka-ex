@@ -18,6 +18,12 @@ function App() {
 <div className="App">
   <header>
     <h1>Todo list:{todos.length}</h1>
+    <ToDoForm/>
+    {todos.map(()=>{
+      return(
+        <ToDo key={todo.id}/>
+      )
+    })}
   </header>
 </div>
   );
