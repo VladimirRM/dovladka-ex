@@ -5,6 +5,9 @@ import ToDoForm  from "./ToDoForm";
 
 function App() {
    const [ todos,setTodos]=useState([])
+   const addTasks =()=>{
+
+   }
   return (
 <div></div>
   );
