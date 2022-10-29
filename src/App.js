@@ -11,6 +11,9 @@ function App() {
    const removeTasks =()=>{
 
    }
+   const handleToggle =()=>{
+
+   }
   return (
 <div></div>
   );
