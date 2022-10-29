@@ -15,7 +15,11 @@ function App() {
 
    }
   return (
-<div></div>
+<div className="App">
+  <header>
+    <h1>Todo list:{todos.length}</h1>
+  </header>
+</div>
   );
 }
 
