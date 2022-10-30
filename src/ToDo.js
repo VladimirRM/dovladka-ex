@@ -2,7 +2,7 @@
 import React from "react";
 
 const ToDo = ({todo,toggleTask,removeTask}) => {
-  return <div>ToDo</div>;
+  return <div key={todo.id} className='item-todo'></div>;
 };
 
 export default ToDo;
