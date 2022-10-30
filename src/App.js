@@ -8,8 +8,11 @@ function App() {
    const addTasks =(userInput)=>{
       if(userInput){
         const newItem={
-          id:Math.random().toString(36);
+          id:Math.random().toString(36).substr(2.9),
+          task: userInput,
+          complete: false 
         }
+        setTodos([...todos, newItem])
       }
    }
    const removeTask =()=>{
@@ -22,16 +25,18 @@ function App() {
 <div className="App">
   <header>
     <h1>Todo list:{todos.length}</h1>
+    </header>
     <ToDoForm/>
-    {todos .map(()=>{
+    {todos .map((todo)=>{
       return(
-        <ToDo key={todos.id} />
-        // todos={todos}
+        <ToDo key={todo.id}
+        todo={todo}
         toggleTask={handleToggle}
         removeTask={removeTask}
+        />
+       
       )
     })}
-  </header>
 </div>
   );
 }
