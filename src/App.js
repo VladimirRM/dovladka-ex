@@ -8,7 +8,7 @@ function App() {
    const addTasks =(userInput)=>{
       if(userInput){
         const newItem={
-          id:Math.random().toString(36)
+          id:Math.random().toString(36);
         }
       }
    }
