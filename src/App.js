@@ -7,21 +7,25 @@ function App() {
   const addTask = (userInput) => {
     if (userInput) {
       const newItem = {
-        id: Math.random().toString(36).substr(2,9),
+        id: Math.random().toString(36).substr(2, 9),
         task: userInput,
         complete: false,
       };
       setTodos([...todos, newItem]);
     }
   };
-  const removeTask = () => {};
-  const handleToggle = () => {};
+  const removeTask = (id) => {
+    setTodos([...todos.filter((todo) => todo.id !== id)]);
+  };
+  const handleToggle = (id) => {
+    setTodos([...todos.map()])
+  };
   return (
     <div className="App">
       <header>
         <h1>Todo list:{todos.length}</h1>
       </header>
-      <ToDoForm  addTask={addTask}/>
+      <ToDoForm addTask={addTask} />
       {todos.map((todo) => {
         return (
           <ToDo
