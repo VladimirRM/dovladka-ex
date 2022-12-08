@@ -14,6 +14,10 @@ const App = () => {
   }
   return (
     <div className='App'>
+      <header>
+        <h1>Todo List:{todos.length}</h1>
+      </header>
+      
       
     </div>
   )
