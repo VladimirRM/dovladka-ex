@@ -1,6 +1,7 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 const App = () => {
+  const [todos,setTodos]=useState([])
   return (
     <div>
       
