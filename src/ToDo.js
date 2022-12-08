@@ -1,20 +1,17 @@
 import React, { useState } from "react";
 
-const ToDo = () => {
-
-const handleChange =()=>{
-  
-}
-const handleSubmit =()=>{
-
-}
-const handleKeyPress =()=>{
-
-}
-
-
-
+const ToDo = ({ addTask }) => {
   const [userInput, setUserInput] = useState("");
+
+  const handleChange = (e) => {
+    setUserInput(e.currentTarget.value)
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    addTask(userInput)
+  };
+  const handleKeyPress = () => {};
+
   return (
     <form onSubmit={handleSubmit}>
       <input
